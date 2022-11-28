@@ -1,0 +1,304 @@
+.LoginBox{
+    display: flex;
+    height:85vh;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+#rc-anchor-alert, .rc-anchor-alert {
+    /* color: red; */
+    font-size: 0px;
+    /* margin: 2px; */
+    /* position: absolute; */
+    top: 0;
+}
+
+.LoginBox-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27vw;
+    background: rgba(139, 182, 178, 0.63);
+}
+.LoginBox-left img{
+    height:30vw;
+    width:32vw;
+}
+.LoginBox-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height:60vh; */
+    align-items: center;
+    width: 35vw;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 3px 2px 6px 8px;
+}
+.LoginBox-right h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+}
+.LoginBox-right-main{
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-20px;
+}
+.LoginBox-right-main a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    /* line-height: 18px; */
+    text-align: right;
+    color: #172CEE;
+}
+.input-border{
+    background: #FFFFFF;
+    border: 3px solid #746D6D;
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 25vw;
+    height:6.5vh;
+    margin: 13px 0;
+}
+.input-border input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    /* line-height: 24px; */
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    color: rgba(0, 0, 0, 0.47);
+
+    
+}
+.icons{
+    background: rgba(217, 217, 217, 0.29);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 13px;
+min-width:38px;
+height:40px;
+cursor: pointer;
+}
+.forgetPassword{
+    display: flex;
+    justify-content: flex-end;
+    width:25vw;
+    position: relative;
+    font-size: 18px;
+    top:-9px;
+}
+.forgetPassword p{
+    text-align: center;
+}
+.checkboxContainer{
+    display: flex;
+    /* margin: 0 50px; */
+    width: 26vw;
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    flex-wrap: wrap;
+    position: relative;
+    /* left:-10px; */
+
+}
+.checkboxContainer input{
+    margin:0 8px;
+    
+}
+input.checkbox{
+    width:25px;
+    height:25px;
+    /* border:5px solid black;
+    border-radius: 10px; */
+}
+.checkboxContainer-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkboxContainer-left img{
+    margin:0 8px;
+}
+.checkboxContainer-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+}
+.Signin{
+    box-sizing: border-box;
+    /* position: absolute; */
+    width: 15vw;
+    height: 49px;
+    color: #FFFFFF;
+    border: none;
+    background: #FA6B51;
+    border-radius: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 29px;
+    margin-top: 35px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px 2px rgb(148 147 147);
+}
+
+.LoginBox-right-main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register{
+    font-size: 17px;
+    font-weight: 800;
+}
+.register p{
+    text-align: center;
+    margin: 5px 0;
+}
+.register span{
+    font-size: 25px;
+    font-weight: 800;
+}
+.captcha{
+    width:213px;
+    height:56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.recaptcha{
+    /* width:5vw;
+    height: 3vw; */
+  
+    transform: scale(0.7);
+}
+.errmsg{    color: red;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    background-color: #5f9ea094;
+    font-weight: 700;
+    
+
+}
+.offscreen{
+    display: none;
+}
+@media screen and (max-width: 771px) {
+    
+    .LoginBox{
+        height:100vh;
+        width:100vw;
+        
+    }
+    .LoginBox-left{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 27vw;
+        background: rgba(182, 111, 176, 0.63);
+
+    }
+    .LoginBox-right{
+            /* display: none; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    /* border: 2px solid black; */
+
+    }
+    .LoginBox-right h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 14px;
+        color: white;
+    }
+    .checkboxContainer-right
+    {
+        margin: 10px 0;
+        background: #f5f7f2;
+        height: 54px;
+        width: 212px;
+    }
+    .checkboxContainer{
+        width: 58vw;
+        display: flex;
+        justify-content: center;
+    }
+    .LoginBox-right-main{
+                  /* width: 30vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 96vw;
+    height: 99vh;
+    background-image: url(../../public/images/backimg.jpg);
+    background-size: cover;
+    /* filter: invert(0.8); */
+    background-repeat: no-repeat;
+    filter: blur(0.2);
+    top: 0px;
+    /* border: 2px solid black; */
+    border-radius: 33px;
+    box-shadow: 2px 2px 2px 2px grey;
+    }
+    .LoginBox-right-main a{
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 17px;
+        /* line-height: 18px; */
+        text-align: right;
+        color: #ff8d04;
+    }
+    .input-border,.forgetPassword{
+        width: 65vw;
+    }
+    .checkboxContainer{
+        width: 58vw;
+    }
+    .checkboxContainer-right{
+        margin: 10px 0;
+    }
+    .Signin{
+        width: 40vw;
+    }
+    }
+   
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+    
